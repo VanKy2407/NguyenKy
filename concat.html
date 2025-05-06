@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+
+
+<script>
+    let text = "hello ";
+    let text2 = "world";     // khai báo biến text và text2
+    let text3 = text.concat(text2); // nối chuỗi text và text2 lại với nhau
+    console.log(text3); // in ra chuỗi đã nối
+    // các hàm xử lý chuỗi trong javascript
+    console.log(text2.toUpperCase()); // in ra chuỗi text2 đã chuyển đổi thành chữ hoa
+    console.log(text2.toLowerCase()); // chuyển đổi chuỗi text2 thành chữ thường
+
+
+    let x = 7;  // nếu là số thì sẽ là true, nếu là chuỗi thì sẽ là false
+    console.log(isNaN(x)); // kiểm tra xem x có phải là số hay không
+    console.log(isNaN("hello")); // kiểm tra xem chuỗi "hello" có phải là số hay không
+
+
+    //Kiểu dữ liệu – Number
+    var a = 5.555555;
+    console.log(a.toFixed(2)); // làm tròn số a đến 2 chữ số thập phân
+    console.log(a.toExponential(2)); // chuyển đổi số a thành dạng số mũ với 2 chữ số thập phân
+    console.log(a.toPrecision(2)); // chuyển đổi số a thành dạng số có độ chính xác 2 chữ số
+    console.log(a.toString()); // chuyển đổi số a thành chuỗi
+    //Kiểu dữ liệu – Boolean
+    var b = true; // khai báo biến b là kiểu boolean
+    console.log(b.toString()); // chuyển đổi biến b thành chuỗi
+    console.log(b.valueOf()); // lấy giá trị của biến b
+
+    //Kiểu dữ liệu – Object
+    var c = { name: "John", age: 30 }; // khai báo biến c là kiểu object
+    console.log(c.name); // in ra tên của đối tượng c
+    console.log(c.age); // in ra tuổi của đối tượng c
+
+    //Kiểu dữ liệu – Array
+    var d = [1, 2, 3, 4, 5]; // khai báo biến d là kiểu array
+    var e = [6, 7, 8, 9, 10]; // khai báo biến e là kiểu array 
+    var f = d.concat(e); // nối mảng d và e lại với nhau
+    console.log(f); // in ra mảng đã nối
+    console.log(f[0]); // in ra phần tử đầu tiên của mảng d
+    console.log(f.length); // in ra độ dài của mảng d
+
+    let animals = ["dog", "horse", "cat", "platypus", "dog"];
+
+    console.log(animals.lastIndexOf("dog")); // in ra vị trí của phần tử cuối cùng có giá trị là "dog" trong mảng animals
+
+
+</script>
+
+
+</html>

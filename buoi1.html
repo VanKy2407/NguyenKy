@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var x = 'toi la kyhip';
+    // các hàm xử lý chuỗi trong javascript
+    alert(x); // in ra chuỗi
+    alert(x.length);
+    // lấy độ dài của chuỗi
+
+    alert(x.charAt(0)); // lấy ký tự đầu tiên
+    alert(x.charAt(x.length - 1)); // lấy ký tự cuối cùng   
+    alert(x.indexOf('la')); // lấy vị trí của chuỗi con trong chuỗi lớn
+    alert(x.indexOf('la', 3)); // lấy vị trí của chuỗi con trong chuỗi lớn bắt đầu từ vị trí 3  
+    alert(x.substring(0, 5)); // lấy chuỗi con từ vị trí 0 đến vị trí 5 (không bao gồm vị trí 5)
+    alert(x.substring(5)); // lấy chuỗi con từ vị trí 5 đến hết chuỗi
+    alert(x.substring(5, 0)); // lấy chuỗi con từ vị trí 5 đến vị trí 0 (không bao gồm vị trí 0)
+    alert(x.toUpperCase()); // chuyển đổi chuỗi thành chữ hoa
+    alert(x.toLowerCase()); // chuyển đổi chuỗi thành chữ thường
+    alert(x.trim()); // xóa khoảng trắng ở đầu và cuối chuỗi
+    alert(x.replace('la', 'la la')); // thay thế chuỗi con bằng chuỗi mới
+    alert(x.split(' ')); // tách chuỗi thành mảng dựa trên ký tự phân cách (ở đây là khoảng trắng)
+    alert(x.split(' ', 2)); // tách chuỗi thành mảng dựa trên ký tự phân cách (ở đây là khoảng trắng) và lấy 2 phần tử đầu tiên
+    alert(x.split(' ', 2).join('-')); // tách chuỗi thành mảng dựa trên ký tự phân cách (ở đây là khoảng trắng) và lấy 2 phần tử đầu tiên rồi nối lại thành chuỗi mới với ký tự phân cách là '-'
+
+</script>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="sayhi()"> add number</button>
+    <p> Bạn thích chơi:</p>
+    <input type="button" value="Game" onclick="hienThiAnh('game');" />
+    <input type="button" value="Đá banh" onclick="hienThiAnh('football');" />
+</body>
+<script type="text/javascript">
+    // hàm sayhi() sẽ hiển thị một hộp thoại yêu cầu người dùng nhập vào hai số a và b
+    function sayhi() {
+        alert("hello world"); // hiển thị hộp thoại thông báo
+        alert("hello cac be");
+
+    }
+    function hienThiAnh(dovat) {
+        if (dovat == "game") {
+            document.write("<img src='https://www.google.com.vn/imgres?q=da%20banh&imgurl=https%3A%2F%2Fyeuchaybo.com%2Fwp-content%2Fuploads%2F2016%2F03%2Fda-banh-nike.jpg&imgrefurl=https%3A%2F%2Fyeuchaybo.com%2Fchay-bo-va-da-banh-lam-sao-de-tot-cho-ca-hai%2F&docid=-H_J-p6wcTDfBM&tbnid=Mlq_58_QXDkfVM&vet=12ahUKEwibi-XOxoyNAxWKs1YBHc_tLVAQM3oECBcQAA..i&w=1600&h=1063&hcb=2&ved=2ahUKEwibi-XOxoyNAxWKs1YBHc_tLVAQM3oECBcQAA' alt='game' />"); // hiển thị ảnh game
+        } else if (dovat == "football") {
+            document.write("<img src='football.jpg' alt='football' />"); // hiển thị ảnh đá banh
+        } else {
+            alert("Khong co hinh anh nao ca!"); // nếu không có hình ảnh nào thì hiển thị thông báo
+        }
+    }
+
+
+    // function xacNhan(traloi) {
+    //     var ketQua = "";
+    //     // nếu người dùng chọn OK thì biến traloi sẽ có giá trị true, ngược lại là false
+    //     // nếu traloi == true thì hiển thị thông báo "Tuyet voi. Chuc ban chien thang!"
+    //     // nếu traloi == false thì hiển thị thông báo "Hen gap lai ban nhe!"
+    //     if (traloi) {
+    //         ketQua = "Tuyet voi. Chuc ban chien thang!";
+    //     } else {
+    //         ketQua = "Hen gap lai ban nhe!";
+    //     }
+    //     return ketQua;
+    // }
+    // var traloi = confirm("Ban se choi game chu?");
+    // var thongbao = xacNhan(traloi);
+    // alert(thongbao);
+    // console.log(thongbao);
+    // // alert(traloi); // in ra giá trị của biến traloi
+    // // alert(xacNhan(traloi)); // in ra giá trị của hàm xacNhan(traloi)
+    // // console.log(xacNhan(traloi)); // in ra giá trị của hàm xacNhan(traloi)
+    // // console.log(traloi); // in ra giá trị của biến traloi
+
+</script>
+
+</html>
